@@ -1,4 +1,6 @@
+let modal = document.getElementById("modal");
 
+let imgPro = document.getElementById("imgPro");
 let imgModal;
 const route  = (event) => {
     event = event || window.event;    
@@ -7,8 +9,6 @@ const route  = (event) => {
     handleLocation();
     var current = document.getElementsByClassName("active");
     current[0].classList.remove("active");
-    event.target.className = "active";
-    
 }
 
 const routes = {
@@ -19,11 +19,32 @@ const routes = {
 }
 
 const handleLocation = async () => {
+
+  
     const path = window.location.pathname;
     const route = routes[path] || routes[404];
     const html = await fetch(route)
-                        .then(data => data.text());
+          .then(data => data.text());
+
+  //  console.log(path);
+    if (path == "/"){
+
+	document.getElementById("tab_pro").classList.add("active");
+    }
+    if(path == "/habilidades"){
+
+	document.getElementById("tab_hab").classList.add("active");
+
+    }
+    
+
     document.getElementById("content").innerHTML = html;
+    document.getElementById("ability") || document.getElementById("proyect").childNodes.forEach(elm => {
+	elm.addEventListener('click', evt => {
+	    modal.style.visibility = "visible";
+	    imgPro.src = evt.target.src;
+	})
+    })
     
 }
 
@@ -32,19 +53,13 @@ window.route = route;
 handleLocation();
 
 
-let modal = document.getElementById("modal");
-
-function imgClick(evt){
-    console.log(evt);
-    console.log(document.querySelector("content"));
-    let img = document.getElementById("img_m");
-    console.log(img);
-    modal.style.visibility = "visible";
-}
-
 modal.addEventListener("click", (evt) => {
-    evt.stopPropagation();
-    evt.target.style.visibility = "hidden"; 
-});
 
+    if(evt.target.className == "mymodal"){
+
+	evt.target.style.visibility = "hidden"; 
+    }
+
+    
+});
 
