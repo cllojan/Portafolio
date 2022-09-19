@@ -18,8 +18,10 @@ a{
     width: 100%;
     margin:20px;
     display: flex;
+    flex-wrap:wrap;
     flex-direction: row;
-    align-items: center;    
+    align-items: center;
+
     gap: 30px;
 }
 #profile img{
@@ -114,18 +116,18 @@ a{
     background-color: #34495e;
 }
 .proyectos{
-    margin-top: 50px;
-    margin-left: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 50px;
+    margin: 50px;
+    
+    display:grid;
+    gap:1rem;
+    grid-auto-rows:15rem;
+    grid-template-columns:repeat(auto-fill, minmax(min(100%,16rem), 1fr));
 }
 
 .proyectos img {
     border-radius: 7px;
-    width: 16rem;
-    height: 13rem;
+    width:100%;
+    height:100%;
     object-fit: cover;
     
 }
@@ -242,5 +244,44 @@ a{
 #icon path{
 
     fill:#007acc;
+
+}
+@media (max-width:880px){
+    .profile__socialm ul {
+	flex-direction:row;
+    }
+}
+@media (max-width:600px){
+    #profile{
+	margin:20px 0;
+	align-items:center;
+	justify-content:center;
+    }
+    .profile__opt{
+	margin:0;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+    }
+    .profile__opt a{
+
+
+    }
+    .profile__socialm{
+	position:absolute;
+	top:0;
+	right:0;
+    }
+    .profile__socialm ul {
+	flex-direction:column;
+    }
+    .profile__socialm ul li a{
+	color:#FFF;
+    }
+    .profile__socialm ul li a i{
+	color: #34495e;
+    }
+
 
 }
