@@ -153,7 +153,94 @@ a{
     
 }
 .modal-content img{
-    width: 65%;
-    height: 100%;
-    object-fit: cover;
+    width:80%;
+    height:100%;
+}
+.habilidades{
+    margin-top:50px;
+    display:flex;
+    align-item:center;
+    justify-content:center;
+}
+
+.content_abi{
+    width:60%;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+}
+.element{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    color:#34495e;
+}
+
+.element p{
+    font-weight:bold;
+}
+#icon{
+    cursor:pointer;
+    font-size:3.5rem;
+
+}
+
+.bxl-html5{
+    color:#FD5E53;
+
+}
+
+.bxl-css3{
+    color:#3c99dc;
+
+}
+.bxl-javascript{
+    color:#F0DB4F;
+
+}
+.bxl-react{
+    color:#62DbFB;
+}
+
+.bxl-angular{
+    color:#dd1b16;
+
+}
+.bxl-git{
+    color:#FD5E53;
+
+}
+
+.bxl-nodejs{
+    color:#3c873A;
+
+}
+
+.bxl-tailwind-css{
+    color:#3c99dc;
+
+}
+
+.bxl-firebase{
+    color:#ffa611;
+
+}
+
+.bxl-postgresql{
+    color:#20639B;
+
+}
+
+.element img{
+    width:50px;
+    height:50px;
+    margin:12px 0;
+    cursor:pointer;
+}
+#icon path{
+
+    fill:#007acc;
+
 }
