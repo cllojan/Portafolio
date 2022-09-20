@@ -160,7 +160,7 @@ a{
 }
 .habilidades{
     margin-top:50px;
-    display:flex;
+    display:none;
     align-item:center;
     justify-content:center;
 }
