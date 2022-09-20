@@ -1,0 +1,12 @@
+  /home/lum/Documents/Github/portfolio:
+  total used in directory 40 available 895349268
+  drwxrwxr-x 6 lum lum 4096 sep 19 15:53 .
+  drwxrwxr-x 9 lum lum 4096 sep 15 21:16 ..
+  drwxrwxr-x 3 lum lum 4096 sep 12 20:25 assets
+  drwxrwxr-x 8 lum lum 4096 sep 19 15:54 .git
+  drwxrwxr-x 3 lum lum 4096 sep 19 15:53 .github
+  -rw-rw-r-- 1 lum lum 1892 sep 17 09:49 index.html
+  -rw-rw-r-- 1 lum lum 1472 sep 17 10:16 main.js
+* -rw-rw-r-- 1 lum lum    1 sep 13 21:50 modal.js
+  drwxrwxr-x 2 lum lum 4096 sep 19 12:34 pages
+  -rw-rw-r-- 1 lum lum 4038 sep 19 15:34 styles.css
