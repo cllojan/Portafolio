@@ -23,13 +23,17 @@ tabs.addEventListener("click", (evt) => {
 	prevtBtn = evt.target;
 
 	if(evt.target.classList[1] == "pro"){
-	    console.log("s")
-	    pro.style.display = "grid";
-	    hab.style.display = "none";
+
+	    pro.style.visibility = "visible";
+	    pro.style.left="50px";
+	    hab.style.visibility = "hidden";	    
+	    hab.style.right="-900px";
 	}
 	if(evt.target.classList[1] == "hab"){
-	    pro.style.display = "none";
-	    hab.style.display = "flex";
+	    pro.style.visibility = "hidden";
+	    pro.style.left="-1500px";
+	    hab.style.right="115px";
+	    hab.style.visibility = "visible";
 	}
     }
 
