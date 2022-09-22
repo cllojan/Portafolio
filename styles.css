@@ -117,21 +117,70 @@ a{
 }
 .proyectos{
     margin: 50px;
-    
+
     display:grid;
     gap:1rem;
     grid-auto-rows:15rem;
     grid-template-columns:repeat(auto-fill, minmax(min(100%,16rem), 1fr));
 }
 
+.cont_pro{
+    position:relative;
+    overflow:hidden;
+}
+
+.cont_pro:hover .info_pro{
+    bottom:10px;
+    visibility:visible;
+    transition: 0.4s ease;
+	
+}
+.cont_pro:hover img{
+    filter:brightness(35%);
+    transition:0.5s ease;
+}
+
+
 .proyectos img {
     border-radius: 7px;
     width:100%;
     height:100%;
-    object-fit: cover;
-    
+    object-fit: cover; 
+    cursor:pointer;
+    transition:0.3s ease-in;
 }
 
+
+.info_pro{
+    margin:0 15px;
+    color:#fff;
+    position:absolute;
+    bottom:-300px;
+    visibility:hidden;
+    transition:0.5s ease;
+    display:flex;
+    flex-direction:column;
+    height:90%;
+    
+    justify-content:space-around;
+}
+
+.head a{
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+}
+.head a i{
+    font-size:1.6rem;
+}
+.info h4{
+    font-size:20px;
+    
+}
+.info p, .skills{
+    
+    opacity:0.6;
+}
 
 .mymodal{
     visibility: hidden;
