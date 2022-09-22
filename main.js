@@ -50,14 +50,3 @@ const handleLocation = async () => {
 }
 
 
-
-modal.addEventListener("click", (evt) => {
-
-    if(evt.target.className == "mymodal"){
-
-	evt.target.style.visibility = "hidden"; 
-    }
-
-    
-});
-
